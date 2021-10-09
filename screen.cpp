@@ -32,7 +32,6 @@ void Screen::clear() {
 }
 
 void Letter::next(string str) {
-    cout << &lines << " " << this << endl;
     lines.push_back(str);
 }
 
@@ -72,11 +71,9 @@ Letter& operator<<(const LetterFactory& factory, const char* str) {
 }
 
 Letter& operator<<(const LetterFactory& factory, const signed char* str) {
-    cout << "const signed char*" << endl;
     return operator<<(factory, (const char*) str);
 }
 
 Letter& operator<<(const LetterFactory& factory, const unsigned char* str) {
-    cout << "const unsigned char*" << endl;
     return operator<<(factory, (const char*) str);
 }
