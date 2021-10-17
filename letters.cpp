@@ -5,7 +5,7 @@ Letter& alphabet::upperA() {
 }
 
 Letter& alphabet::upperB() {
-    return letter << "B";
+    return letter<< "|==== " << "|    |" << "|==== " << "|    |" << "|____|";;
 }
 
 Letter& alphabet::upperC() {
