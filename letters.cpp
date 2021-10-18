@@ -19,7 +19,12 @@ Letter& alphabet::upperB() {
 }
 
 Letter& alphabet::upperC() {
-    return letter << "C";
+    return letter
+    << "======"
+    << "==    "
+    << "==    "
+    << "==    "
+    << "======";
 }
 
 Letter& alphabet::upperD() {
