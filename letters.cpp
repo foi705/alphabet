@@ -74,8 +74,14 @@ Letter& alphabet::upperQ() {
 }
 
 Letter& alphabet::upperR() {
-    return letter << "R";
+    return letter
+    << "||=== "
+    << "||   |"
+    << "||=== "
+    << "|| \\  "
+    << "||  \\_";
 }
+
 
 Letter& alphabet::upperS() {
     return letter << "S";
