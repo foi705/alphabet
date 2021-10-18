@@ -49,6 +49,11 @@ Letter& alphabet::upperH() {
 
 Letter& alphabet::upperI() {
     return letter << "I";
+    << "-----"
+    << "  |  "
+    << "  |  "
+    << "  |  "
+    << "-----";
 }
 
 Letter& alphabet::upperJ() {
