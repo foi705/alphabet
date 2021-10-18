@@ -7,6 +7,11 @@ void Screen::next(string str) {
     if (matrix.size() <= current) {
         matrix.push_back(vector<string>(current == 0 ? sizes.size() : sizes.size() - 1, ""));
     }
+    else {
+        for (int i = matrix.at(current).size()+1; i < sizes.size(); ++i) {
+            matrix.at(current).push_back("");
+        }
+    }
     matrix.at(current++).push_back(str);
     if (current == 1) {
         sizes.push_back(str.size());
@@ -29,9 +34,10 @@ void Screen::nextLetter() {
 
 void Screen::print() {
     for (int i = 0; i < matrix.size(); ++i) {
-        for (int j = 0; j < matrix.at(i).size(); ++j) {
-            cout << matrix.at(i).at(j);
-            for (int k = matrix.at(i).at(j).size(); k < sizes.at(j); ++k) {
+        for (int j = 0; j < matrix.at(0).size(); ++j) {
+            uint32_t valSize = matrix.at(i).size() > j ? matrix.at(i).at(j).size() : 0;
+            if (valSize != 0) cout << matrix.at(i).at(j);
+            for (int k = valSize; k < sizes.at(j); ++k) {
                 cout << " ";
             }
             cout << "  "; /// 2 spaces;

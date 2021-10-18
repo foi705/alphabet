@@ -17,6 +17,7 @@ int main()
     upperF().render(screen);
     screen.print();
     screen.clear();
+    cout << endl;
     upperG().render(screen);
     upperH().render(screen);
     upperI().render(screen);
@@ -25,6 +26,7 @@ int main()
     upperL().render(screen);
     screen.print();
     screen.clear();
+    cout << endl;
     upperM().render(screen);
     upperN().render(screen);
     upperO().render(screen);
@@ -33,6 +35,7 @@ int main()
     upperR().render(screen);
     screen.print();
     screen.clear();
+    cout << endl;
     upperS().render(screen);
     upperT().render(screen);
     upperU().render(screen);
@@ -41,9 +44,11 @@ int main()
     upperX().render(screen);
     screen.print();
     screen.clear();
+    cout << endl;
     upperY().render(screen);
     upperZ().render(screen);
     screen.print();
     screen.clear();
+    cout << endl;
     return 0;
 }
