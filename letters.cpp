@@ -26,7 +26,12 @@ Letter& alphabet::upperE() {
 }
 
 Letter& alphabet::upperF() {
-    return letter << "F";
+        return letter
+    << "||======"
+    << "||      "
+    << "||====  "
+    << "||      "
+    << "||      ";
 }
 
 Letter& alphabet::upperG() {
