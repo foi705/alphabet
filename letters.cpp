@@ -42,7 +42,12 @@ Letter& alphabet::upperI() {
 }
 
 Letter& alphabet::upperJ() {
-    return letter << "J";
+    return letter
+    << "   ||"
+    << "   ||"
+    << "   ||"
+    << "|  ||"
+    << "|__||";
 }
 
 Letter& alphabet::upperK() {
