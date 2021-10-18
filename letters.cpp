@@ -106,5 +106,10 @@ Letter& alphabet::upperY() {
 }
 
 Letter& alphabet::upperZ() {
-    return letter << "Z";
+    return letter
+    << "===="
+    << "  / "
+    << " /  "
+    << "/   "
+    << "====";
 }
