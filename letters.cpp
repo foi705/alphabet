@@ -1,7 +1,12 @@
 #include "letters.hpp"
 
 Letter& alphabet::upperA() {
-    return letter << "A";
+    return letter
+    << "    /\\    "
+    << "   /  \\   "
+    << "  /----\\  "
+    << " /------\\ "
+    << "/        \\";
 }
 
 Letter& alphabet::upperB() {
