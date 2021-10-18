@@ -10,9 +10,10 @@ using namespace std;
 class Screen {
 private:
     vector<vector<string> > matrix;
+    vector<uint32_t> sizes;
     uint16_t current;
 public:
-    Screen(): matrix(vector<vector<string> >()), current(0) {}
+    Screen(): matrix(vector<vector<string> >()), current(0), sizes(vector<uint32_t>()) {}
     void next(string str);
     void next(const char* str);
     void nextLetter();

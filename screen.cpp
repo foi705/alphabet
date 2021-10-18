@@ -1,12 +1,22 @@
 #include "screen.hpp"
 
+#include <cmath>
 #include <iostream>
 
 void Screen::next(string str) {
     if (matrix.size() <= current) {
-        for (int i = 0; i <= current; ++i) matrix.push_back(vector<string>());
+        matrix.push_back(vector<string>(current == 0 ? sizes.size() : sizes.size() - 1, ""));
     }
     matrix.at(current++).push_back(str);
+    if (current == 1) {
+        sizes.push_back(str.size());
+    }
+    else {
+        sizes[sizes.size() - 1] = std::max(
+                                           sizes[sizes.size() - 1],
+                                           static_cast<uint32_t>(str.size())
+                                           );
+    }
 }
 
 void Screen::next(const char* str) {
@@ -20,7 +30,11 @@ void Screen::nextLetter() {
 void Screen::print() {
     for (int i = 0; i < matrix.size(); ++i) {
         for (int j = 0; j < matrix.at(i).size(); ++j) {
-            cout << matrix.at(i).at(j) << "  "; /// 2 spaces
+            cout << matrix.at(i).at(j);
+            for (int k = matrix.at(i).at(j).size(); k < sizes.at(j); ++k) {
+                cout << " ";
+            }
+            cout << "  "; /// 2 spaces;
         }
         cout << endl;
     }
@@ -28,6 +42,7 @@ void Screen::print() {
 
 void Screen::clear() {
     matrix.clear();
+    sizes.clear();
     current = 0;
 }
 
