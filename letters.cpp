@@ -90,7 +90,12 @@ Letter& alphabet::upperU() {
 }
 
 Letter& alphabet::upperV() {
-    return letter << "V";
+    return letter
+    << "\\        /"
+    << " \\      / "
+    << "  \\    /  "
+    << "   \\  /   "
+    << "    \\/    ";
 }
 
 Letter& alphabet::upperW() {
