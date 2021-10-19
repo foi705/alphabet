@@ -62,7 +62,12 @@ Letter& alphabet::upperN() {
 }
 
 Letter& alphabet::upperO() {
-    return letter << "O";
+    return letter
+    << " ==== "
+    << "|    |"
+    << "|    |"
+    << "|    |"
+    << " ==== ";
 }
 
 Letter& alphabet::upperP() {
