@@ -30,7 +30,13 @@ Letter& alphabet::upperF() {
 }
 
 Letter& alphabet::upperG() {
-    return letter << "G";
+    return letter
+    << "======"
+    << "=     "
+    << "=  ==="
+    << "=    ="
+    << "======";
+
 }
 
 Letter& alphabet::upperH() {
