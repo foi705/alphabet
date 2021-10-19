@@ -78,7 +78,12 @@ Letter& alphabet::upperR() {
 }
 
 Letter& alphabet::upperS() {
-    return letter << "S";
+    return letter
+    << "======"
+    << "=     "
+    << "======"
+    << "     ="
+    << "======";
 }
 
 Letter& alphabet::upperT() {
