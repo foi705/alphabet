@@ -182,7 +182,12 @@ Letter& alphabet::upperV() {
 }
 
 Letter& alphabet::upperW() {
-    return letter << "W";
+    return letter
+    << "\\            /"
+    << " \\          / "
+    << "  \\  \\  /  /  "
+    << "   \\  \\/  /   "
+    << "    \\ /\\ /    ";
 }
 
 Letter& alphabet::upperX() {
