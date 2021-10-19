@@ -80,7 +80,12 @@ Letter& alphabet::upperK() {
 }
 
 Letter& alphabet::upperL() {
-    return letter << "L";
+    return letter
+    << "||    "
+    << "||    "
+    << "||    "
+    << "||    "
+    << "||____";
 }
 
 Letter& alphabet::upperM() {
