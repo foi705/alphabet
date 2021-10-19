@@ -98,7 +98,12 @@ Letter& alphabet::upperW() {
 }
 
 Letter& alphabet::upperX() {
-    return letter << "X";
+    return letter
+    << "\\    /"
+    << " \\  / "
+    << "  \\/  "
+    << "  /\\ "
+    << " /  \\";
 }
 
 Letter& alphabet::upperY() {
