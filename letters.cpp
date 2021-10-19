@@ -18,7 +18,12 @@ Letter& alphabet::upperC() {
 }
 
 Letter& alphabet::upperD() {
-    return letter << "D";
+    return letter
+    << "|====\\"
+    << "|    |"
+    << "|    |"
+    << "|    |"
+    << "|====/";
 }
 
 Letter& alphabet::upperE() {
