@@ -34,7 +34,12 @@ Letter& alphabet::upperG() {
 }
 
 Letter& alphabet::upperH() {
-    return letter << "H";
+    return letter
+    << "||   ||"
+    << "||   ||"
+    << "||===||"
+    << "||   ||"
+    << "||   ||";
 }
 
 Letter& alphabet::upperI() {
