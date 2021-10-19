@@ -154,7 +154,12 @@ Letter& alphabet::upperS() {
 }
 
 Letter& alphabet::upperT() {
-    return letter << "T";
+    return letter
+    << "======"
+    << "  ||  "
+    << "  ||  "
+    << "  ||  "
+    << "  ||  ";
 }
 
 Letter& alphabet::upperU() {
