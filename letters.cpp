@@ -46,7 +46,13 @@ Letter& alphabet::upperJ() {
 }
 
 Letter& alphabet::upperK() {
-    return letter << "K";
+    return letter
+    << "==  =="
+    << "== == "
+    << "====  "
+    << "== == "
+    << "==  ==";
+
 }
 
 Letter& alphabet::upperL() {
