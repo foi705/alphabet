@@ -106,7 +106,12 @@ Letter& alphabet::upperO() {
 }
 
 Letter& alphabet::upperP() {
-    return letter << "P";
+   return letter
+    << "|==== "
+    << "|    |"
+    << "|==== "
+    << "|     "
+    << "|     ";
 }
 
 Letter& alphabet::upperQ() {
