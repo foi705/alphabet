@@ -79,7 +79,12 @@ Letter& alphabet::upperL() {
 }
 
 Letter& alphabet::upperM() {
-    return letter << "M";
+    return letter
+    << "|\    /|"
+    << "| \  / |"
+    << "|  \/  |"
+    << "|      |"
+    << "|      |";
 }
 
 Letter& alphabet::upperN() {
