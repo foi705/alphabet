@@ -170,6 +170,11 @@ Letter& alphabet::upperT() {
 
 Letter& alphabet::upperU() {
     return letter << "U";
+    << "|     |"
+    << "|     |"
+    << "|     |"
+    << "|     |"
+    << "\_____/";
 }
 
 Letter& alphabet::upperV() {
