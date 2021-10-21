@@ -53,7 +53,7 @@ Letter& alphabet::upperH() {
 }
 
 Letter& alphabet::upperI() {
-    return letter << "I";
+    return letter
     << "-----"
     << "  |  "
     << "  |  "
@@ -104,8 +104,8 @@ Letter& alphabet::upperQ() {
     << "________ "
     << "|      | "
     << "|      | "
-    << "|______\"
-    << "        \";
+    << "|______\\ "
+    << "        \\";
 }
 
 Letter& alphabet::upperR() {
