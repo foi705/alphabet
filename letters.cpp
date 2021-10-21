@@ -53,7 +53,7 @@ Letter& alphabet::upperH() {
 }
 
 Letter& alphabet::upperI() {
-    return letter << "I";
+    return letter
     << "-----"
     << "  |  "
     << "  |  "
@@ -144,9 +144,9 @@ Letter& alphabet::upperX() {
 
 Letter& alphabet::upperY() {
     return letter
-    << "\    /"
-    << " \  / "
-    << "  \/  "
+    << "\\    /"
+    << " \\  / "
+    << "  \\/  "
     << "  ||  "
     << "  ||  ";
 }
