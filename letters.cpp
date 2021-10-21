@@ -142,7 +142,12 @@ Letter& alphabet::upperP() {
 }
 
 Letter& alphabet::upperQ() {
-    return letter << "Q";
+    return letter
+    << "________ "
+    << "|      | "
+    << "|      | "
+    << "|______\\ "
+    << "        \\";
 }
 
 Letter& alphabet::upperR() {
