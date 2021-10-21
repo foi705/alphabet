@@ -184,7 +184,7 @@ Letter& alphabet::upperT() {
 }
 
 Letter& alphabet::upperU() {
-    return letter << "U";
+    return letter
     << "|     |"
     << "|     |"
     << "|     |"
