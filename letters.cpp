@@ -210,7 +210,12 @@ Letter& alphabet::upperX() {
 }
 
 Letter& alphabet::upperY() {
-    return letter << "Y";
+    return letter
+    << "\\    /"
+    << " \\  / "
+    << "  \\/  "
+    << "  ||  "
+    << "  ||  ";
 }
 
 Letter& alphabet::upperZ() {
