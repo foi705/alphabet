@@ -12,6 +12,7 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=c++17" />
 					<Add option="-g" />
 				</Compiler>
 			</Target>
@@ -32,7 +33,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="letters.cpp" />
+		<Unit filename="letters.hpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="screen.cpp" />
+		<Unit filename="screen.hpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
