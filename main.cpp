@@ -1,7 +1,7 @@
 #include <iostream>
 #include "letters.hpp"
 #include "screen.hpp"
-#include "letters.hpp"
+#include "application.hpp"
 
 using namespace std;
 using namespace alphabet;
@@ -50,5 +50,9 @@ int main()
     screen.print();
     screen.clear();
     cout << endl;
+
+    ConsoleApplication app;
+    app.run();
+
     return 0;
 }
