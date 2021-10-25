@@ -33,6 +33,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="application.cpp" />
+		<Unit filename="application.hpp" />
 		<Unit filename="letters.cpp" />
 		<Unit filename="letters.hpp" />
 		<Unit filename="main.cpp" />
