@@ -5,6 +5,8 @@
 
 namespace alphabet {
 
+    void renderFrom(Screen& screen, std::string word);
+
     Letter& upperA();
     Letter& upperB();
     Letter& upperC();
