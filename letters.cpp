@@ -1,4 +1,45 @@
 #include "letters.hpp"
+#include <map>
+#include <functional>
+#include <string>
+
+map<char, Letter> letters;
+
+void initLetters() {
+    letters['A'] = alphabet::upperA();
+    letters['B'] = alphabet::upperB();
+    letters['C'] = alphabet::upperC();
+    letters['D'] = alphabet::upperD();
+    letters['E'] = alphabet::upperE();
+    letters['F'] = alphabet::upperF();
+    letters['G'] = alphabet::upperG();
+    letters['H'] = alphabet::upperH();
+    letters['I'] = alphabet::upperI();
+    letters['J'] = alphabet::upperJ();
+    letters['K'] = alphabet::upperK();
+    letters['L'] = alphabet::upperL();
+    letters['M'] = alphabet::upperM();
+    letters['N'] = alphabet::upperN();
+    letters['O'] = alphabet::upperO();
+    letters['P'] = alphabet::upperP();
+    letters['Q'] = alphabet::upperQ();
+    letters['R'] = alphabet::upperR();
+    letters['S'] = alphabet::upperS();
+    letters['T'] = alphabet::upperT();
+    letters['U'] = alphabet::upperU();
+    letters['V'] = alphabet::upperV();
+    letters['W'] = alphabet::upperW();
+    letters['X'] = alphabet::upperX();
+    letters['Y'] = alphabet::upperY();
+    letters['Z'] = alphabet::upperZ();
+}
+
+void alphabet::renderFrom(Screen& screen, std::string word) {
+    if (letters.empty()) initLetters();
+    for (char c: word) {
+        letters[c].render(screen);
+    }
+}
 
 Letter& alphabet::upperA() {
     return letter
